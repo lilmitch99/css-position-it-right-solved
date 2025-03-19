@@ -3,6 +3,10 @@
   padding: 30px;
   margin-top: 60px;
   width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
 }
 
 .legal-header h1 {
@@ -12,6 +16,10 @@
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+  padding-bottom: 100px;
 }
 
 section {
@@ -21,7 +29,7 @@ section {
   border-bottom: 1px solid grey;
   padding: 30px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0px auto;
   color: white;
 }
 
@@ -30,13 +38,14 @@ section {
   background-color: #2b2d3b;
   height: max-content;
   padding: 10px 16px;
+  position: sticky;
+  top: 170px;
 }
 
 .document-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 600px;
 }
 
 .document-content p {
@@ -54,11 +63,13 @@ section {
 
 footer {
   display: flex;
+  position: fixed;
   align-items: center;
   width: 100%;
   background-color: #e2e2e2;
   padding: 0 30px;
   min-height: 70px;
+  bottom: 0px;
 }
 
 .footer-content {
